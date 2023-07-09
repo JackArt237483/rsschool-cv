@@ -20,3 +20,36 @@
  * React
  * TypeScript
  * GitHub
+
+#### *Code example*
+let nums = [3,2,2,3]
+let val = 3
+
+function removeElement(nums,val) {
+  let k = 0
+  for(let i = 0; i < nums.length; i++) {
+    if(nums[i] !== val) {
+      nums[k] = nums[i]
+      k++
+    }
+  }
+  return nums
+}
+
+const newNums = removeElement(nums,val)
+console.log(newNums)
+console.log(newNums.length)
+ In this code, you need to remove unnecessary elements from the array
+
+### *Education*
+* Geeks Courses
+   + From June to 2022 to March 2023
+* During the courses, we studied the most basic concepts in Frontend development
+   + Html and Css
+   + Basic concepts JS
+     - Like this constants, object, array, conditions if else switch case functions.Recursion asynchrony and queries and much more
+* And the most popular framework is React and the Redix Toolkit
+   + And we also made the most final project.With a large team, as in real development.We had backend and frontend designers and developers
+
+### *English*
+  My level is reading documentation in English and basic conversational level
