@@ -3,9 +3,158 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>My-cv</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;500&display=swap" rel="stylesheet">
 </head>
 <body>
-  
+   <div class="wrapper">
+     <header class="header">
+      <div class="header_info">
+       <img src="assets/img/out.jpg" alt="myphoto">
+       <div class="header_name">
+          <h1>Artem Kharchenko</h1>
+          <h2>Frontend developer</h2>
+        <div class="location">
+          <img src="assets/icons/Location.svg" alt="location">
+          <p>Bishkek,Kyrgyzstan</p>
+        </div>
+       </div>
+      </div>
+     <nav class="nav">
+      <ul class="nav-list">
+        <li class="nav-item"><a href="#contacts">Contacts</a></li>
+        <li class="nav-item"><a href="#summary">Summary</a></li>
+        <li class="nav-item"><a href="#skills">Skills</a></li>
+        <li class="nav-item"><a href="#code">Code</a></li>
+        <li class="nav-item"><a href="#courses">Courses</a></li>
+        <li class="nav-item"><a href="#project">Projects</a></li>
+        <li class="nav-item"><a href="#education">Education</a></li>
+        <li class="nav-item"><a href="#english">English</a></li>
+       </ul>
+    </nav>
+     <div class="line"></div>
+     </header>
+     <main class="main">
+      <div class="column_one">
+        <section id="summary" class="Summary">
+          <h2>Summary</h2>
+          <p>I am new to frontend development, and over the past year I have mastered the basic technologies of this area. I am constantly expanding my knowledge and striving to build a successful career in the IT industry. However, I also want to understand more fully how this sphere works from the inside.</p>
+          <div class="scrow"></div>
+        </section>
+        <section id="code" class="code">
+           <h2>Remove Duplicates from Sorted Array</h2>
+           <code>
+            let nums = [3,2,2,3];
+            let val = 3;
+            function removeElement(nums,val){
+              let k = 0;
+              for (let i = 0; i &lt; nums.length; i++) {
+                if (nums[i] !== val) {
+                  nums[k] = nums[i];
+                  k++;
+                }
+              }
+              return nums;
+            }
+            const newNums = removeElement(nums,val);
+            console.log(newNums );
+            console.log(newNums.length); 
+          </code>
+           <div class="scrow"></div>
+        </section>
+        <section id="courses" class="courses">
+           <h2>Courses</h2>
+           <ul>
+            <li>Geeks courses in Bishkek from July 2022 to March 2023</li>
+            <li>In the direction of Frontend development.Where they talked about the most basic technologies of Html, Css, Javascript</li>
+           </ul>
+           <div class="scrow"></div> 
+        </section>
+        <section id="education" class="education">
+          <h2>Education</h2>
+          <ul>
+            <li>International University of Kyrgyzstan in Bishkek, Kyrgyzstan.Bachelor of Software Engineering</li>
+          </ul>
+          <div class="scrow"></div>
+        </section>
+      </div>
+      <div class="column_two">
+         <section id="contacts" class="contacts">
+             <h3>Contacts</h3>
+             <ul>
+               <li>
+                 <img src="assets/icons/phone.svg" alt="number">
+                 <p>+996554900815</p>
+               </li>
+               <li>
+                 <img src="assets/icons/github.svg" alt="github">
+                 <a href="https://github.com/JackArt237483">JackArt237483</a>
+               </li>
+               <li>
+                 <img src="assets/icons/telegram.svg" alt="telegram">
+                 <a href="https://t.me/JackFront">@JackFront</a>
+               </li>
+             </ul>
+             <div class="scrow"></div>
+         </section>
+         <section id="skills" class="skills">
+           <h3>Skills</h3>
+           <ul>
+            <li>Html</li>
+            <li>Css</li>
+            <li>Javascript</li>
+            <li>React</li>
+            <li>TypeScript</li>
+            <li>Redux Toolkit</li>
+           </ul>
+           <div class="scrow"></div>
+         </section>
+         <section id="project" class="project">
+            <h2>Project</h2>
+            <ul>
+              <li>
+                <a href="https://github.com/JackArt237483/Flappy_bird">Flappy bird</a>
+              </li>
+              <li>
+                <a href="https://github.com/JackArt237483/react-pizza-pet-project">
+                  Pizza-project
+                </a>
+              </li>
+            </ul>
+            <div class="scrow"></div>
+         </section>
+         <section id="english" class="english">
+           <h3>English</h3>
+           <ul>
+            <li>Russian native</li>
+            <li>English  elementary (Pre-Intermediate)</li>
+           </ul>
+           <div class="scrow"></div>
+         </section>
+      </div>
+     </main>
+     <footer class="footer">
+       <div class="scrow"></div>
+        <div class="link">
+           <ul>
+              <li>
+                <img src="assets/icons/github.svg" alt="github">
+                <a href="https://github.com/JackArt237483">Visit my Github</a>
+              </li>
+              <li>
+                © 2023
+              </li>
+              <li>
+                 <a href="https://rs.school/js/">
+                  <img class="big-img" src="assets/icons/rsschool.png" alt="rsschool">
+                </a>
+              </li>
+           </ul>
+        </div>
+        <div class="scrow"></div>
+     </footer>
+  </div>
 </body>
 </html>
